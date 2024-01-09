@@ -150,10 +150,14 @@ body{
     font-size: 10px;
     font-weight: 500;
 }
-.header-bottom {
-    max-width: 75rem;
+.horiz-scr{
+    overflow-x: hidden;
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
+}
+.header-bottom {
+    max-width: 75rem;
+ 
     height: 53px;
     background-color: #F0F0F4;
     overflow: auto;
