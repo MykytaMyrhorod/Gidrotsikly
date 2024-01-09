@@ -403,6 +403,11 @@ body{
         margin: 0 auto;
     }
 }
+@media (max-width: 768px) {
+    .header-bottom {
+        overscroll-behavior-x: contain;
+    }
+  }
 /* ---------------------------------section-hero-------------------------- */
 @media (max-width: 71.87em){
     .hero__container{
