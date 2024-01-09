@@ -150,20 +150,18 @@ body{
     font-size: 10px;
     font-weight: 500;
 }
-.horiz-scr{
-    overflow-x: hidden;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
-}
 .header-bottom {
     max-width: 75rem;
- 
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
     height: 53px;
     background-color: #F0F0F4;
     overflow: auto;
     scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 .header-bottom::-webkit-scrollbar{
+    display: none;
     width: 0;
     height: 0;
 }
