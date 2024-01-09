@@ -5,10 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
     <title>Gidrotsikly</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header-top">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__link">
+                                <a class="menu__item" href="#">Магазины</a>
+                            </li>
+                            <li class="menu__link">
+                                <a class="menu__item" href="#">Акции</a>
+                            </li>
+                            <li class="menu__link">
+                                <a class="menu__item" href="#">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header-top__logo" href="#">
+                        <img class="logo__img" src="img/header/logo.svg" alt="logo">
+                    </a>
+                    <a class="header-top__adress" href="#">
+                        Москва,  ул. Науки  25
+                    </a>
+                    <div class="header-top__user-actions">
+                        <a class="header-top__favourites" href="#">
+                            <img class="favourites__icon" src="img/header/favourites.svg" alt="favourites">
+                        </a>
+                        <a class="header-top__account" href="#">
+                            <img class="account__icon" src="img/header/account.svg" alt="account">
+                        </a>
+                        <a class="header-top__cart" href="#">
+                            <img class="cart__icon" src="img/header/cart.svg" alt="cart">
+                            <span class="cart-number">10</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <ul class="header-bottom__list">
+                        <li class="header-bottom__item">
+                            <a class="header-bottom__link" href="#">Квадроциклы</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a class="header-bottom__link" href="#">Катера</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a class="header-bottom__link" href="#">Гидроциклы</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a class="header-bottom__link" href="#">Лодки</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a class="header-bottom__link" href="#">Вездеходы</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a class="header-bottom__link" href="#">Снегоходы</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a class="header-bottom__link" href="#">Двигатели</a>
+                        </li>
+                        <li class="header-bottom__item">
+                            <a class="header-bottom__link" href="#">Запчасти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-img">
+                                    <img src="img/hero/слайдер баннер.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-img">
+                                    <img src="img/hero/слайдер баннер.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-img">
+                                    <img src="img/hero/слайдер баннер.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-img">
+                                    <img src="img/hero/слайдер баннер.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-img">
+                                    <img src="img/hero/слайдер баннер.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next-2"></div>
+                        <div class="swiper-button-prev-1"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="card-action">
+                        <div class="card-action-top">
+                            <div class="card-action__block-action">
+                                <p class="block-action__text">
+                                    акция
+                                </p>
+                            </div>
+                            <div class="card-action__block-price">
+                                <p class="block-price__price-now">
+                                    190 000
+                                </p>
+                                <p class="block-price__previous-price">
+                                    225 000
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-action-img">
+                            <img src="img/hero/motor.svg" alt="suzuki-motor">
+                        </div>
+                        <div class="card-action__block-title">
+                            <h2 class="block-title__title">
+                                Лодочный мотор <br>
+                                Suzuki DF9.9BRS
+                            </h2>
+                        </div>
+                        <div class="card-action-time">
+                            <div class="card-action-time__text">
+                                <p class="text__time">
+                                    Акция действует до
+                                    <br>
+                                    <span class="text__time-blue">
+                                        31.08.2020
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script> 
 </body>
 </html>
