@@ -14,6 +14,62 @@
         <header class="header">
             <div class="header__container">
                 <div class="header-top">
+                    <div class="header-top__burger">
+                        <button class="header-top__burger-btn" id="burger">
+                            <span></span><span></span><span></span>
+                        </button>
+                        <div class="burger-btn__additional">
+                            <nav class="additional-menu">
+                                <ul class="additional-menu__list">
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Войти</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Регистрация</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Избранное</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Корзина</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Магазины</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Акции</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Доставка и оплата</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Квадроциклы</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Катера</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Гидроциклы</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Лодки</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Вездеходы</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Снегоходы</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Двигатели</a>
+                                    </li>
+                                    <li class="additional-menu__item">
+                                        <a class="additional-menu__link" href="#">Запчасти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__link">
@@ -29,6 +85,7 @@
                     </nav>
                     <a class="header-top__logo" href="#">
                         <img class="logo__img" src="img/header/logo.svg" alt="logo">
+                        <img class="logo__img-small" src="img/header/logo-768.svg" alt="">
                     </a>
                     <a class="header-top__adress" href="#">
                         Москва,  ул. Науки  25
@@ -78,7 +135,7 @@
         </header>
         <main class="page">
             <section class="hero">
-                <div class="hero__container">
+                <div class="hero__block-1">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -113,39 +170,33 @@
                     </div>
                     <div class="card-action">
                         <div class="card-action-top">
-                            <div class="card-action__block-action">
-                                <p class="block-action__text">
+                            <div class="block-title-action">
+                                <p class="title-action">
                                     акция
                                 </p>
                             </div>
-                            <div class="card-action__block-price">
-                                <p class="block-price__price-now">
+                            <div class="card-action-price">
+                                <p class="new-price">
                                     190 000
                                 </p>
-                                <p class="block-price__previous-price">
+                                <p class="alt-price">
                                     225 000
                                 </p>
                             </div>
                         </div>
                         <div class="card-action-img">
-                            <img src="img/hero/motor.svg" alt="suzuki-motor">
+                            <img class="img-action" src="img/hero/motor.svg" alt="motor">
                         </div>
-                        <div class="card-action__block-title">
-                            <h2 class="block-title__title">
-                                Лодочный мотор <br>
+                        <div class="motor-title">
+                            <h2 class="title-motor-card">
+                                Лодочный мотор<br> 
                                 Suzuki DF9.9BRS
                             </h2>
                         </div>
-                        <div class="card-action-time">
-                            <div class="card-action-time__text">
-                                <p class="text__time">
-                                    Акция действует до
-                                    <br>
-                                    <span class="text__time-blue">
-                                        31.08.2020
-                                    </span>
-                                </p>
-                            </div>
+                        <div class="card-action-bottom">
+                            <p class="action-bottom-text">
+                                Акция действует до <br> <span class="data-text">31.08.2020</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -155,6 +206,6 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script> 
+    <script defer src="js/main.js"></script> 
 </body>
 </html>
