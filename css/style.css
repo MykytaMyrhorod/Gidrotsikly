@@ -540,7 +540,6 @@ body{
     height: 2px;
     width: 0%;
     background-color: #1C62CD;
-    transition: width 0.5s;
 }
 .search-button-item button:focus::after{
     width: 100%;
