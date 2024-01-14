@@ -542,7 +542,7 @@ body{
     background-color: #1C62CD;
     transition: width 0.5s;
 }
-.search-button-item button:active::after{
+.search-button-item button:focus::after{
     width: 100%;
 }
 
