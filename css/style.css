@@ -541,7 +541,7 @@ body{
     width: 0%;
     background-color: #1C62CD;
 }
-.search-button-item button:focus::after{
+.search-button-item button:active::after{
     width: 100%;
 }
 .search-button-item button {
