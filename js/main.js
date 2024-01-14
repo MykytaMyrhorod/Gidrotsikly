@@ -13,3 +13,4 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("header").classList.toggle("open")
     })
 })
+document.getElementById("myButton").focus();
