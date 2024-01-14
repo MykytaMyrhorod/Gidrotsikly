@@ -13,3 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("header").classList.toggle("open")
     })
 })
+document.querySelector('.search-button-item button').addEventListener('touchstart', function() {
+    this.classList.add('touch');
+});
+
+document.querySelector('.search-button-item button').addEventListener('touchend', function() {
+    this.classList.remove('touch');
+});

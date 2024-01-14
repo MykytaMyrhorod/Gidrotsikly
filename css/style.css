@@ -546,17 +546,25 @@ body{
     transition: width 0.5s;
 }
 
-.search-button-item button:active::after {
+/* Добавим стиль при активации, а также при фокусе и наведении */
+.search-button-item button:active::after,
+.search-button-item button:focus::after,
+.search-button-item button:hover::after {
     width: 100%;
 }
 
 /* Дополнительные стили для обеспечения корректной работы на мобильных устройствах */
 .search-button-item button:focus {
-    outline: none; /* Убираем фокусовку по умолчанию */
+    outline: none;
 }
 
-/* Добавим псевдокласс hover для улучшения визуального опыта на устройствах с тач-экраном */
-.search-button-item button:hover::after {
+/* JavaScript для обработки событий на мобильных устройствах */
+.search-button-item button {
+    touch-action: manipulation;
+}
+
+/* Дополнительный стиль для обработки событий при касании на мобильных устройствах */
+.search-button-item button.touch::after {
     width: 100%;
 }
 
