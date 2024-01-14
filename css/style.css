@@ -530,44 +530,12 @@ body{
 }
 .search-button-item button {
     height: 100%;
-    position: relative;
-    /* Добавим cursor: pointer, чтобы убедиться, что элемент реагирует на касание */
-    cursor: pointer;
 }
 
-.search-button-item button::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0%;
-    background-color: #1C62CD;
-    transition: width 0.5s;
-}
-
-/* Добавим стиль при активации, а также при фокусе и наведении */
-.search-button-item button:active::after,
-.search-button-item button:focus::after,
-.search-button-item button:hover::after {
-    width: 100%;
-}
-
-/* Дополнительные стили для обеспечения корректной работы на мобильных устройствах */
+.search-button-item button:active,
 .search-button-item button:focus {
-    outline: none;
+    border-bottom: 2px solid #1C62CD;
 }
-
-/* JavaScript для обработки событий на мобильных устройствах */
-.search-button-item button {
-    touch-action: manipulation;
-}
-
-/* Дополнительный стиль для обработки событий при касании на мобильных устройствах */
-.search-button-item button.touch::after {
-    width: 100%;
-}
-
 
 
 
