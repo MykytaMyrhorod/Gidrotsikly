@@ -545,10 +545,9 @@ body{
 .search-button-item button:focus::after{
     width: 100%;
 }
-
-
-
-
+.search-button-item button {
+    touch-action: manipulation;
+}
 
 
 
