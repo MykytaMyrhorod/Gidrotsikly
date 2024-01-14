@@ -528,11 +528,14 @@ body{
 .search-button-item:last-child{
     padding-right: .9375rem;
 }
-.search-button-item button{
+.search-button-item button {
     height: 100%;
     position: relative;
+    /* Добавим cursor: pointer, чтобы убедиться, что элемент реагирует на касание */
+    cursor: pointer;
 }
-.search-button-item button::after{
+
+.search-button-item button::after {
     content: "";
     position: absolute;
     left: 0;
@@ -540,12 +543,21 @@ body{
     height: 2px;
     width: 0%;
     background-color: #1C62CD;
+    transition: width 0.5s;
 }
-.search-button-item button:active::after{
+
+.search-button-item button:active::after {
     width: 100%;
 }
-.search-button-item button {
-    touch-action: manipulation;
+
+/* Дополнительные стили для обеспечения корректной работы на мобильных устройствах */
+.search-button-item button:focus {
+    outline: none; /* Убираем фокусовку по умолчанию */
+}
+
+/* Добавим псевдокласс hover для улучшения визуального опыта на устройствах с тач-экраном */
+.search-button-item button:hover::after {
+    width: 100%;
 }
 
 
