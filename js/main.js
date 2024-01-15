@@ -28,21 +28,44 @@ buttons.forEach((btn, index) => {
     searchInput.placeholder = placeholders[index];
   });  
 });
-buttons.forEach((btn, index) => {
 
-    btn.addEventListener('click', () => {
-  
-      // снимаем активный фон со всех кнопок
-      buttons.forEach(b => {
-        b.style.background = ''
-        b.style.borderRadius = ''
-    });
+  const borderActive = '2px solid #007bff';
+
+buttons.forEach(btn => {
+
+  btn.addEventListener('click', () => {
+
+    if (matchMedia('(hover: none)').matches) { 
+       // условие выполняется на сенсорных устройствах  
+       
+      buttons.forEach(b => b.style.borderBottom = ''); 
+
+      btn.style.borderBottom = borderActive;
+
+    } else {
+        buttons.forEach((btn, index) => {
+
+            btn.addEventListener('click', () => {
+          
+              // снимаем активный фон со всех кнопок
+              buttons.forEach(b => {
+                b.style.background = ''
+                b.style.borderRadius = ''
+            });
+              
+              // добавляем фон текущей нажатой кнопке
+              btn.style.background = '#F0F0F4';
+              btn.style.borderRadius = '5px'
+          
+              searchInput.placeholder = placeholders[index];
+            });
+          
+          });
       
-      // добавляем фон текущей нажатой кнопке
-      btn.style.background = '#F0F0F4';
-      btn.style.borderRadius = '5px'
-  
-      searchInput.placeholder = placeholders[index];
-    });
-  
+    }
+
+    // остальная логика
+
   });
+
+})
