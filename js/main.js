@@ -13,4 +13,36 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("header").classList.toggle("open")
     })
 })
-document.getElementById("myButton").focus();
+const searchInput = document.querySelector('.search-site');
+
+const buttons = document.querySelectorAll('.btn-1, .btn-2, .btn-3');
+
+const placeholders = [
+  'Поиск по номеру',
+  'Поиск по марке', 
+  'Поиск по названию'
+];
+
+buttons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    searchInput.placeholder = placeholders[index];
+  });  
+});
+buttons.forEach((btn, index) => {
+
+    btn.addEventListener('click', () => {
+  
+      // снимаем активный фон со всех кнопок
+      buttons.forEach(b => {
+        b.style.background = ''
+        b.style.borderRadius = ''
+    });
+      
+      // добавляем фон текущей нажатой кнопке
+      btn.style.background = '#F0F0F4';
+      btn.style.borderRadius = '5px'
+  
+      searchInput.placeholder = placeholders[index];
+    });
+  
+  });
