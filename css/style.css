@@ -46,12 +46,6 @@ button{
     font-size: inherit;
     line-height: inherit;
 }
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button, 
-input[type="search"]::-webkit-search-results-button, 
-input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance:none;
-}
 /* ----------------------------------------------------------- */
 body{
     font-family: 'SF Pro Display', sans-serif;
@@ -549,7 +543,9 @@ body{
     background-color: #F0F0F4;
     transform: translate3d(0,0,0);
     font-size: 16px;
+    -webkit-touch-callout: none
 }
+
 .btn-search{
     padding: 1.0625rem 2.5rem;
     background-color: #1C62CD;
