@@ -533,6 +533,7 @@ body{
 .form-search{
     display: flex;
     overflow-y: hidden;
+    position: relative;
 }
 .search-site{
     width: 100%;
@@ -550,6 +551,12 @@ body{
     letter-spacing: 1.68px;
     text-transform: uppercase;
     transition: background-color 0.3s;
+}
+.icon-search{
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    display: none;
 }
 .btn-search:hover{
     background-color: #104fad;
@@ -751,6 +758,11 @@ body{
     }
 }
 /* ----------------------------------------section-search---------------------------------------------------- */
-@media (max-width: 768px){
-
+@media (hover: none){
+    .btn-search{
+        display: none;
+    }
+    .icon-search{
+        display: inline-block;
+    }
 }
