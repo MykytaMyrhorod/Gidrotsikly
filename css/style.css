@@ -537,9 +537,11 @@ body{
 }
 .search-site{
     width: 100%;
+    min-height: 50px;
     padding: .9375rem 0 .9375rem 1.25rem;
     border-radius: .1875rem;
     background-color: #F0F0F4;
+    transform: translate3d(0,0,0);
 }
 .btn-search{
     padding: 1.0625rem 2.5rem;
