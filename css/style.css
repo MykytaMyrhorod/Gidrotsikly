@@ -651,7 +651,10 @@ body{
 .product-img-engin{
     padding: 0 77px 9px 0;
 }
-
+.product-img-hydro{
+    width: 121px;
+    height: 65px;
+}
 
 
 
